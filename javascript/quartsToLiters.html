@@ -1,0 +1,28 @@
+<!Doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Quarts to Liters</title>
+        <script>
+            let quarts = "";
+
+            function convertQuarts(){
+                quarts = document.getElementById('volQuarts').value;
+
+                volLiters = quarts * 0.946352946;
+
+                document.getElementById('volLiters').innerHTML = volLiters;
+                           }
+        </script>
+    </head>
+         <body>
+             What is the volume in quarts? <input type="text" id="volQuarts"> quarts.
+             <br />
+
+             The volume in liters is: <span id="volLiters"></span>
+             
+             <br />
+
+             <button type="button" onclick="convertQuarts()">Convert to Liters</button>
+         </body>
+</html>
